@@ -5,8 +5,4 @@ public class Aster extends Flower {
         super("Aster");
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
 }

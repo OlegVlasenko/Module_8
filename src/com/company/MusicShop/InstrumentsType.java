@@ -1,4 +1,4 @@
 package com.company.MusicShop;
 
 
-public enum InstrumentsType { GUITAR , PIANO , TRUMPET };
+public enum InstrumentsType {GUITAR, PIANO, TRUMPET}

@@ -13,7 +13,7 @@ import com.company.MusicShop.Trumpet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Printer {
+class Printer {
 
     //identifying class of object using 'instanceof'
     private static String getName2(Object param) {
@@ -81,7 +81,7 @@ public class Printer {
     static void initArrayRandom(ArrayList<Object> Gifts, int count) {
         for (int i = 0; i < count; i++) {
 
-            int choose = (int) (Math.random() * 10);
+            int choose = new java.util.Random().nextInt(10);
             switch (choose) {
                 case 0:
                     Gifts.add(new Jpeg("Name" + (int) (Math.random() * 10)));

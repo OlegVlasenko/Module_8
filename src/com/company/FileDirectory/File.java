@@ -1,25 +1,25 @@
 package com.company.FileDirectory;
 
 abstract public class File {
-    public String name;
+    private final String name;
 
-    public String Ext;
+    private final String ext;
 
-    public File(String nameParam, String paramExt) {
+    File(String nameParam, String paramExt) {
         this.name = nameParam;
-        this.Ext = paramExt;
+        this.ext = paramExt;
     }
 
-    public String toString(){
-        return this.name + "." + this.Ext;
+    public String toString() {
+        return this.name + "." + this.ext;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
-    public String getExtension(){
-        return this.Ext;
+    public String getExtension() {
+        return this.ext;
     }
 
 }
